@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="css/todoapp.css">
+</head>
+<body>
+  <div id="app">
+    <h1>To Do List</h1>
+    <div id="list-container">
+      <div id="lists">
+        <div class="list" data-list-id="0">
+          <h2>Default List</h2>
+          <ul></ul>
+          <input type="text" placeholder="New task" class="new-task-input">
+          <button class="new-task-button">Add Task</button>
+          <button class="delete-list-button">Delete List</button>
+        </div>
+        <div id="new-list">
+          <input type="text" placeholder="New list name" id="new-list-input">
+          <button id="new-list-button">Create List</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/todoapp.js"></script>
+</body>
+</html>
+

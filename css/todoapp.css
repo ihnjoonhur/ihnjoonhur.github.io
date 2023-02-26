@@ -1,0 +1,88 @@
+body {
+    background-color: #d8d8d6;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  #app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #2F5D8C;
+    margin-top: 0;
+  }
+  
+  #list-container {
+    background-color: #A0B3C1;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #lists {
+    display: flex;
+  }
+  
+  .list {
+    background-color: white;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  
+  .list h2 {
+    margin-top: 0;
+  }
+  
+  .new-task-input {
+    margin-right: 10px;
+    padding: 5px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .new-task-button {
+    padding: 5px 10px;
+    background-color: #2F5D8C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-list-button {
+    padding: 5px 10px;
+    background-color: #D40F0F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #new-list {
+    margin-top: 20px;
+  }
+  
+  #new-list input {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  #new-list-button {
+    padding: 5px 10px;
+    background-color: #2F5D8C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

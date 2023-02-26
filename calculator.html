@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/calculator.css">
+</head>
+<body>
+	<div id="calculator">
+		<table>
+			<tr>
+				<td colspan="4"><input type="text" id="display" readonly></td>
+			</tr>
+			<tr>
+				<td><button onclick="addToDisplay('7')">7</button></td>
+				<td><button onclick="addToDisplay('8')">8</button></td>
+				<td><button onclick="addToDisplay('9')">9</button></td>
+				<td><button class="operator" onclick="addToDisplay('/')">/</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="addToDisplay('4')">4</button></td>
+				<td><button onclick="addToDisplay('5')">5</button></td>
+				<td><button onclick="addToDisplay('6')">6</button></td>
+				<td><button class="operator" onclick="addToDisplay('*')">*</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="addToDisplay('1')">1</button></td>
+				<td><button onclick="addToDisplay('2')">2</button></td>
+				<td><button onclick="addToDisplay('3')">3</button></td>
+				<td><button class="operator" onclick="addToDisplay('-')">-</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="addToDisplay('0')">0</button></td>
+				<td><button onclick="addToDisplay('.')">.</button></td>
+				<td><button onclick="clearDisplay()">C</button></td>
+				<td><button class="operator" onclick="addToDisplay('+')">+</button></td>
+			</tr>
+			<tr>
+				<td colspan="4"><button class="equals" onclick="calculate()">=</button></td>
+			</tr>
+		</table>
+	</div>
+
+	<script type="text/javascript" src="js/calculator.js"></script>
+</body>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p style="text-align: center; font-weight: bold;">
+        &copy; IhnJoon Hur <span id="currentYear"></span>
+      </p>
+    </div>
+  </footer>
+  
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = currentYear;
+  </script>
+  
+
+</html>
