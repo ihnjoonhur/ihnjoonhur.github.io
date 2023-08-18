@@ -1,18 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>To Do List</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/todoapp.css">
+  <link rel="stylesheet" href="todoapp.css">
 </head>
 <body>
   <div id="app" class="container-fluid">
     <h1 class="text-center">To Do List</h1>
     <div id="list-container" class="card shadow-sm p-3 mb-5 bg-white rounded">
       <div id="lists" class="row justify-content-around">
-        <div class="list card col-lg-4">
+        <!-- Center the card and create equal space on both sides using offset-lg-2 -->
+        <div class="list card col-lg-4 offset-lg-2">
           <div class="card-body">
             <h2 class="card-title">Routine List</h2>
             <ul class="list-group list-group-flush"></ul>
@@ -24,7 +24,8 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid">
+  <!-- Increase margin between the cards using my-5 -->
+  <div class="container-fluid my-5">
     <div id="new-list" class="card m-2" style="width: 14rem;">
       <div class="card-body">
         <input type="text" placeholder="New list name" class="form-control my-3" id="new-list-input">
@@ -32,6 +33,7 @@
       </div>
     </div>
   </div>
-  <script src="js/todoapp.js"></script>
+  <script src="todoapp.js"></script>
 </body>
 </html>
+

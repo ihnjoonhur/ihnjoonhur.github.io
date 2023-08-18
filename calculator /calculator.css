@@ -66,6 +66,13 @@ input[type="text"]:focus {
     background-color: #1C4966;
     color: #d8d8d6;
     }
+
+footer {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        background-color: #d8d8d6;  /* Ensuring that the copyright background matches body background */
+    }
     
 .clear-btn {
     background-color: #ff2e2e;

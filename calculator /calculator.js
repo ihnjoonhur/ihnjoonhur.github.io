@@ -11,8 +11,12 @@ function clearDisplay() {
 }
 
 function calculate() {
-  var result = eval(display.value);
-  display.value = result;
+  try {
+    var result = eval(display.value);
+    display.value = result;
+  } catch (e) {
+    display.value = "Error";
+  }
   playSound();
 }
 
@@ -32,9 +36,16 @@ var buttons = document.querySelectorAll("button");
 for (var i = 0; i < buttons.length; i++) {
   var button = buttons[i];
   button.addEventListener("click", function () {
-    addToDisplay(this.value);
+    if (this.value === "=") {
+      calculate();
+    } else if (this.innerText === "C") {
+      clearDisplay();
+    } else {
+      addToDisplay(this.value);
+    }
     handleButtonClick(this);
   });
+
   button.addEventListener("mouseover", function () {
     this.style.backgroundColor = "#4D81B3";
   });
@@ -42,20 +53,6 @@ for (var i = 0; i < buttons.length; i++) {
     this.style.backgroundColor = "#A0B3C1";
   });
 }
-
-var clearButton = document.createElement("button");
-clearButton.innerText = "C";
-clearButton.className = "clear";
-clearButton.addEventListener("click", function () {
-  clearDisplay();
-  handleButtonClick(this);
-});
-clearButton.addEventListener("mouseover", function () {
-  this.style.backgroundColor = "#4D81B3";
-});
-clearButton.addEventListener("mouseout", function () {
-  this.style.backgroundColor = "#A0B3C1";
-});
 
 // Add event listener to window object to listen for key presses
 window.addEventListener("keydown", function(event) {
@@ -87,7 +84,8 @@ window.addEventListener("keydown", function(event) {
       break;
     case "Escape":
       clearDisplay();
-      handleButtonClick(document.querySelector(".clear"));
+      handleButtonClick(document.querySelector(".clear-btn"));
       break;
   }
 });
+
