@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv='cache-control' content='no-cache'> 
+        <meta http-equiv='expires' content='0'> 
+        <meta http-equiv='pragma' content='no-cache'>   
+        <title>IhnJoon Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hello, I am <strong>IhnJoon Hur</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">software developer</p>
+            <img src="img/IJ2-hur.JPG" alt="a picture of IJ" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="skills">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Python Programming</h3>
+                    <p>Skilled in using Python's standard library and popular third-party packages, as well as frameworks such as Flask, Django, NumPy, Pandas, and TensorFlow.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Web Development</h3>
+                    <p>Skilled in developing responsive and user-friendly websites using modern web technologies such as HTML, CSS, and JavaScript using frameworks such as React, Angular, Node.js, and Django.</p>
+                </div> <!-- / service -->
+                
+                <!-- <div class="service">
+                    <h3>iOS Developer</h3>
+                    <p>Experienced in developing native iOS applications for iPhone and iPad using Swift. Create python app of currency exchange. </p>
+                </div> / service -->
+            </div> <!-- / services -->
+            
+            <a href="#projects" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Software Developer based out of NJ/NYC</p>
+           
+           <div class="about-me__body">
+               <p></p>
+           </div>
+           
+           <img src="img/IJ-hur.png" alt="" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="projects">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Calculator -->
+                <a href="calculator.html" class="portfolio__item">
+                    <img src="img/calculator.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="todoapp.html" class="portfolio__item">
+                    <img src="img/todoapp.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="/QuoteMachine/quote.html" class="portfolio__item">
+                    <img src="img/quote.png" alt="" class="portfolio__img">
+                </a>
+<!--              
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+                </a>
+              
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+                </a>
+             
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+                </a>
+                
+              
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
+                </a>
+                
+             
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
+                </a>
+                
+              
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
+                </a>
+                
+           
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
+                </a>  -->
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:ihnjoon.h@gmail.com" class="footer__link">ihnjoon.h@gmail.com</a>
+            <ul class="social-list">
+                <!-- <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li> -->
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/ihnjoonhur">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

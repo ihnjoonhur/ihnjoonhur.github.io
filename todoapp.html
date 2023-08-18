@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/todoapp.css">
+</head>
+<body>
+  <div id="app" class="container-fluid">
+    <h1 class="text-center">To Do List</h1>
+    <div id="list-container" class="card shadow-sm p-3 mb-5 bg-white rounded">
+      <div id="lists" class="row justify-content-around">
+        <div class="list card col-lg-4">
+          <div class="card-body">
+            <h2 class="card-title">Routine List</h2>
+            <ul class="list-group list-group-flush"></ul>
+            <input type="text" placeholder="New task" class="form-control my-3 new-task-input">
+            <button class="new-task-button btn btn-success"><i class="fa fa-paper-plane"></i>Add Task</button>
+            <button class="delete-list-button btn btn-danger"><i class="fa fa-trash"></i>Delete List</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div id="new-list" class="card m-2" style="width: 14rem;">
+      <div class="card-body">
+        <input type="text" placeholder="New list name" class="form-control my-3" id="new-list-input">
+        <button id="new-list-button" class="btn btn-primary">Create List</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/todoapp.js"></script>
+</body>
+</html>
