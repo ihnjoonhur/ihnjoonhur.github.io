@@ -66,4 +66,34 @@ document.addEventListener('DOMContentLoaded', (event) => {
       list.remove();
     }
   }
+
+  const loginButton = document.getElementById("login-button");
+  const registerButton = document.getElementById("register-button");
+  const authContainer = document.getElementById("auth-container");
+  const appContainer = document.getElementById("app-container");
+  
+  loginButton.addEventListener('click', function() {
+    const username = document.getElementById("login-username").value;
+    const password = document.getElementById("login-password").value;
+    
+    const storedPassword = localStorage.getItem(username);
+    if(storedPassword && storedPassword === password) {
+      authContainer.style.display = "none";
+      appContainer.style.display = "block";
+    } else {
+      alert("Invalid username or password.");
+    }
+  });
+
+  registerButton.addEventListener('click', function() {
+    const username = document.getElementById("register-username").value;
+    const password = document.getElementById("register-password").value;
+
+    if(localStorage.getItem(username)) {
+      alert("Username already taken.");
+    } else {
+      localStorage.setItem(username, password);
+      alert("Registration successful.");
+    }
+  });
 });

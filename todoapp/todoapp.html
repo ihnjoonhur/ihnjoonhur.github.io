@@ -7,6 +7,21 @@
   <link rel="stylesheet" href="todoapp.css">
 </head>
 <body>
+  <div id="auth-container" class="container-fluid">
+    <h1 class="text-center">User Authentication</h1>
+    
+    <div id="login-container">
+      <input type="text" placeholder="Username" class="form-control my-3" id="login-username">
+      <input type="password" placeholder="Password" class="form-control my-3" id="login-password">
+      <button id="login-button" class="btn btn-primary">Login</button>
+    </div>
+  
+    <div id="register-container">
+      <input type="text" placeholder="New Username" class="form-control my-3" id="register-username">
+      <input type="password" placeholder="New Password" class="form-control my-3" id="register-password">
+      <button id="register-button" class="btn btn-success">Register</button>
+    </div>
+  </div>
   <div id="app" class="container-fluid">
     <h1 class="text-center">To Do List</h1>
     <div id="list-container" class="card shadow-sm p-3 mb-5 bg-white rounded">
