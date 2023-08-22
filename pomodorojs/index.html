@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main-container">
+    <section>
+        <div class="timer-container">
+            <label for="sessionSelector">Pomodoro:</label>
+            <select id="sessionSelector" onchange="updateSessionLength()">
+                <option value="25">25 minutes</option>
+            </select>
+            
+            <label for="breakSelector">Break:</label>
+            <select id="breakSelector" onchange="updateBreakLength()">
+                <option value="5">Short Break - 5 minutes</option>
+                <option value="15">Long Break - 15 minutes</option>
+            </select>
+
+        <div class="statistics">
+            <h3>Productivity Stats</h3>
+            <p>Sessions Completed: <span id="completedSessions">0</span></p>
+            <p>Breaks Taken: <span id="completedBreaks">0</span></p>
+        </div>
+
+            
+        <div class="time" id="time">25:00</div>
+            <button id="startPauseBtn" onclick="toggleTimer()">Start</button>
+            <button id="resetBtn" onclick="resetTimer()">Reset</button>
+            <button id="toggleModeBtn" onclick="toggleMode()">Switch to Break</button>
+        </div>
+    </section>
+
+    <section class="description-section">
+        <div class="description-container">
+            <h2>An online Pomodoro Timer to boost your productivity</h2>
+            <h3>What is Pomodoro Technique?</h3>
+            <p>The Pomodoro Technique is created by Francesco Cirillo for a more productive way to work and study. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro, from the Italian word for 'tomato', after the tomato-shaped kitchen timer that Cirillo used as a university student. <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">- Wikipedia</a></p>
+        </div>
+
+    </section>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
