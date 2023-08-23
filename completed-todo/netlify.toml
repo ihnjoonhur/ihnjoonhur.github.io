@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build" # The command to build your site
+  publish = "public"        # Directory with static files to serve
+
+[dev]
+  command = "nodemon app.js" # The command to start your server for local development
+  port = 8888             # The port your server runs on locally
+  functions = "netlify/functions" # Directory with serverless functions (if you use them)
